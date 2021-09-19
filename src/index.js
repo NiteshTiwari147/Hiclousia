@@ -8,14 +8,22 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import allReducer from './Data/reducers';
 
 import WelcomePage from './Routes/Welcome';
 import SearchPage from './Routes/HR_DashBoard';
 import Dashboard from './Routes/Profile/Dashboard';
 import MarketAnalysis from './Routes/Profile/MarketAnalysis';
 
+const myStore = createStore(
+  allReducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+);
+
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={myStore}>
     <Router>
     <Switch>
       <Route path="/welcome">
@@ -32,7 +40,7 @@ ReactDOM.render(
       </Route>
     </Switch>
     </Router>
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 
