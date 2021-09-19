@@ -1,0 +1,20 @@
+.filterContainer {
+    height: 7rem; 
+}
+
+.filterContent {
+    display: flex;
+    align-items: center;
+    margin: 0rem 2rem 0rem 5rem;
+}
+
+.searchBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.1rem;
+    width: 10rem;
+    background-color: #0370ff;
+    color: white;
+    border-radius: 10px;
+}

@@ -1,0 +1,13 @@
+.searchResultContent {
+    margin: 0rem 2rem 0rem 5rem;
+}
+
+.headingTile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sortBy {
+    font-weight: 600;
+}

@@ -1,0 +1,25 @@
+.uploaderContainer {
+    height: 15rem;
+}
+
+.uploader {
+    text-align: center;
+    height: 11rem;
+    margin: 2rem 5rem 2rem 5rem;
+    border: 1px dashed #0370ff;
+    border-radius: 10px;
+}
+
+.uploaderContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: inherit;
+}
+
+.uploadText {
+    margin-top: 1rem;
+    font-weight: 500;
+    color: #0370ff 
+}

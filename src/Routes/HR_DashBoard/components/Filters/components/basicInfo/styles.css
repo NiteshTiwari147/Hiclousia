@@ -1,0 +1,11 @@
+.basicInfo {
+    display: flex;
+}
+
+.profileName {
+    margin-right: 1rem;
+}
+
+.location {
+    margin-right: 1rem;
+}
