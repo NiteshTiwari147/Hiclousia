@@ -21,7 +21,6 @@ class Introduction extends React.Component {
          </div>
     }
     render () {
-
         return <div className="introduction">
             <h2 style={{marginBottom: '0.1rem'}}>{this.props.name}</h2>
             <div className="current">

@@ -1,5 +1,6 @@
 .navigationBar {
     height: 5rem;
+    width: inherit;
     background-color: #ffffff;
 }
 

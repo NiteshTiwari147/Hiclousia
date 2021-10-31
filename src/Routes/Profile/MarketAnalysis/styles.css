@@ -1,0 +1,45 @@
+.container {
+    width: 1400px;
+    height: fit-content;
+    position: absolute;
+    background-color: #f8f8f8;
+    top: 5%;
+    right: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #f3f3f3;
+}
+
+.analysisRow {
+    display: flex;
+    flex-direction: row;
+    width: 1270px;
+    height: 25rem;
+    border: 1px solid #0370ff;
+    border-radius: 7px;
+    background: white;
+}
+
+.jobAnalysisHeading {
+    width: inherit;
+    color: grey;
+    margin-left: 8rem;
+}
+
+.recomendationsHeading {
+    width: inherit;
+    color: grey;
+    margin-left: 8rem;
+}
+
+.recomendationsResults {
+    width: inherit;
+    margin-left: 4rem;
+}
+
+
+.columnOne{
+    height: inherit;
+    min-width: 590px;
+}

@@ -1,14 +1,24 @@
-import React from 'react'
+import React, {useState } from 'react'
 import Button from '@mui/material/Button';
+import { useDispatch } from 'react-redux';
+import { fetchKeywords } from './actions';
 import './styles.css';
 
-class UploaderJD extends React.Component {
-    render() {
+function UploaderJD() {
+      const dispatch = useDispatch();
+      const [file, setFile ] = useState([]);
+      const onFileChange = event => {
+        setFile(event.target.files[0])
+        dispatch(fetchKeywords());
+      } 
       return <div className="uploaderContainer">
           <div className="uploader">
                 <div className="uploaderContent">
                     <div className="uploadButton">
-                        <Button variant="outlined">Choose File</Button>
+                         <input  classname="uploadBTN" type="file"  onChange={onFileChange} />
+                        {/* <Button variant="outlined" onClick={() => {}}>
+                       
+                        </Button> */}
                     </div>
                     <div className="uploadText">
                         Upload your Job Description here
@@ -17,7 +27,6 @@ class UploaderJD extends React.Component {
                 
           </div>
       </div>;
-    }
 }
 
 export default UploaderJD;

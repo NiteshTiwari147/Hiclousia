@@ -1,0 +1,29 @@
+.progress {
+    background-color: gray;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    display: flex;
+    width: 5rem;
+    height: 10px;
+    transform: translateX(60px);
+}
+
+.progress-value {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #0370ff;
+    height: 10px;
+    width: 0px;
+}
+
+@keyframes load {
+    0% {width: 0;}
+    100% {width: 78%;}
+}
+
+.viewAllTable {
+    text-align: center;
+    margin: 1rem;
+}
