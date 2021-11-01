@@ -1,30 +1,17 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 import JobsCard from './components/jobCard';
+import { getJobs } from '../../service/jobsHandler';
+import { getGuindance } from '../../service/guidanceHandler';
 import './styles.css'
 
 function SearchResults() {
-    const jobsResult = [{ 'companyName': 'PayPal',
-    'ATS': ['SDE-1', '$110k-$123k', '92%', '4.3']
-    },
-    { 'companyName': 'PayPal',
-    'ATS': ['SDE-1', '$110k-$123k', '92%', '4.3']
-    },
-    { 'companyName': 'PayPal',
-    'ATS': ['SDE-1', '$110k-$123k', '92%', '4.3']
-    },
-    { 'companyName': 'PayPal',
-    'ATS': ['SDE-1', '$110k-$123k', '92%', '4.3']
-    },
-    { 'companyName': 'PayPal',
-    'ATS': ['SDE-1', '$110k-$123k', '92%', '4.3']
-    },
-    { 'companyName': 'PayPal',
-    'ATS': ['SDE-1', '$110k-$123k', '92%', '4.3']
-    }
-]
+    const mode = useSelector(state => state.MAP_mode);
+    const jobsResult = getJobs()
+    const guidanceResult = getGuindance();
     return<div className="results">
-            {jobsResult.map ( cardDetails => <JobsCard cardDetails={cardDetails}/> )}
+            { mode ? jobsResult.map ( cardDetails => <JobsCard cardDetails={cardDetails}/>) : guidanceResult.map ( cardDetails => <JobsCard cardDetails={cardDetails}/>)}
         </div>
 }
 

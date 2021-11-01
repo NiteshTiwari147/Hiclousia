@@ -8,6 +8,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
+import { getTableData } from '../../service/tableHandler';
 import './styles.css';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -30,10 +31,6 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
   },
 }));
 
-function createData(position, no_of_jobs, salaryRange, no_of_companies) {
-  return { position, no_of_jobs, salaryRange, no_of_companies};
-}
-
 const progressBar = () => {
     return <div className="progress">
         <div className="progress-value">
@@ -42,15 +39,8 @@ const progressBar = () => {
     </div>
 }
 
-const rows = [
-  createData('SDE-1', '40K', progressBar(), '24K'),
-  createData('SDE-2', '60K', progressBar(), '37K'),
-  createData('SDE-3', '26K', progressBar(), '14K'),
-  createData('Team Lead', '12K', progressBar(), '3.7K'),
-  createData('Architect', '5K', progressBar(), '2.8K'),
-];
-
 export default function JobsTable() {
+  const rows = getTableData();
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 500 }} aria-label="customized table">
@@ -69,7 +59,7 @@ export default function JobsTable() {
                 {row.position}
               </StyledTableCell>
               <StyledTableCell align="right">{row.no_of_jobs}</StyledTableCell>
-              <StyledTableCell align="right">{row.salaryRange}</StyledTableCell>
+              <StyledTableCell align="right">{ progressBar()}</StyledTableCell>
               <StyledTableCell align="right">{row.no_of_companies}</StyledTableCell>
             </StyledTableRow>
           ))}

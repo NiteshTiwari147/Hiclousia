@@ -30,7 +30,7 @@
 .recomendationsHeading {
     width: inherit;
     color: grey;
-    margin-left: 8rem;
+    margin-left: 4rem;
 }
 
 .recomendationsResults {
@@ -42,4 +42,17 @@
 .columnOne{
     height: inherit;
     min-width: 590px;
+}
+
+.resultHeader{
+    display: flex;
+    align-items: center;
+    width: inherit;
+    justify-content: space-between;
+}
+
+.modeSelect {
+    display: flex;
+    align-items: center;
+    width: 18rem;
 }
