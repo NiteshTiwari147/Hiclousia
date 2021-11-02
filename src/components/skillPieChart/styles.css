@@ -1,0 +1,11 @@
+.skillsPieChart {
+    font-family: sans-serif;
+    text-align: center;
+    width: 15rem;
+    height: 30rem;
+    justify-content: center;
+    margin: 2rem;
+    border: 2px solid #0370ff;
+    background: white;
+    border-radius: 15px;
+}

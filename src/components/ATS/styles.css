@@ -1,0 +1,37 @@
+.ATS {
+    display: flex;
+    flex-wrap: wrap;
+    width: 40rem;
+    height: 20rem;
+    justify-content: center;
+    margin: 2rem;
+    border: 2px solid #0370ff;
+    background: inherit;
+}
+
+.miniBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 17rem;
+    height: 7rem;
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #0370ff;
+    background: #e2efff;
+    border-radius: 15px;
+}
+
+.headingATS {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 1rem;
+    color: #0370ff;
+}
+
+.ATS_score {
+    color: #0370ff;
+}

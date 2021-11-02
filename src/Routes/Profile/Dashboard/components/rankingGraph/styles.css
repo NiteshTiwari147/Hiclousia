@@ -1,0 +1,13 @@
+.rankGraphbox {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 20rem;
+    height: 20rem;
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #0370ff;
+    border-radius: 15px;
+    background: white;
+}

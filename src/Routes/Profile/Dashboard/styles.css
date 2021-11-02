@@ -1,0 +1,14 @@
+.dashboardLayout{
+    display: flex;
+    width: inherit;
+}
+
+.dashboardStackOne {
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboardStackThree {
+    width: 15rem;
+    height: 30rem;
+}

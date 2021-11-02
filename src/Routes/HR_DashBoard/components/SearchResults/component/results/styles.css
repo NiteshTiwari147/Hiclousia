@@ -8,7 +8,7 @@
     width: 22rem;
     height: 30rem;
     margin: 2rem;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 15px;
     background: white;
 }
@@ -40,13 +40,13 @@
     margin-right: 2rem;
     font-size: 12px;
     color: white;
-    border: 1px #0370ff
+    border: 2px #0370ff
 }
 
 .sendInvite {
     background-color: inherit;
     margin-right: 2rem;
-    border: 1px #0370ff;
+    border: 2px #0370ff;
     font-size: 12px;
     font-weight: 100;
     color: white;
