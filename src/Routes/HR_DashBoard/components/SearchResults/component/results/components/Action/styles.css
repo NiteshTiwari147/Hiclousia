@@ -1,0 +1,11 @@
+.modal-size {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 50%;
+    left: 52%;
+    right: auto;
+    bottom: auto;
+  
+    transform: translate(-50%, -50%);
+  }

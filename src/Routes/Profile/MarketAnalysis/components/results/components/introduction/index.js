@@ -6,7 +6,7 @@ class Introduction extends React.Component {
     render () {
 
         return <div className="introduction">
-            <h2 style={{marginBottom: '0.1rem'}}>{this.props.name}</h2>
+            <h4 style={{marginBottom: '0.1rem'}}>{this.props.name}</h4>
         </div>
     }
 }

@@ -16,38 +16,38 @@ function ATS () {
         <div className="miniBox">
             <div className="headingATS">
                 <MessageIcon color="primary" fontSize="large" />
-                <h3>Communication</h3> 
+                <h4>Communication</h4> 
             </div>
-            <h2 className="ATS_score" style={{marginRight: '0.5rem'}}>
+            <h3 className="ATS_score" style={{marginRight: '0.5rem'}}>
                 {ATSdetails.communication}
-            </h2>
+            </h3>
         </div>
         <div className="miniBox">
             <div className="headingATS">
                 <AccountTreeIcon color="success" fontSize="large" />
-                <h3>Total Projects</h3> 
+                <h4>Total Projects</h4> 
             </div>
-            <h2 className="ATS_score" style={{marginRight: '1rem'}}>
+            <h3 className="ATS_score" style={{marginRight: '1rem'}}>
                 {ATSdetails.Projects}
-            </h2>
+            </h3>
         </div>
         <div className="miniBox">
             <div className="headingATS">
                 <SettingsIcon color="warning" fontSize="large" />
-                <h3>Skills</h3> 
+                <h4>Skills</h4> 
             </div>
-            <h2 className="ATS_score" style={{marginRight: '1rem'}}>
+            <h3 className="ATS_score" style={{marginRight: '1rem'}}>
                  {ATSdetails.skills}
-            </h2>
+            </h3>
         </div>
         <div className="miniBox">
             <div className="headingATS">
                 <ChangeCircleIcon color="error" fontSize="large" />
-                <h3>Probability to Switch</h3> 
+                <h4>Probability to Switch</h4> 
             </div>
-            <h2 className="ATS_score"  style={{marginRight: '0.5rem'}}>
+            <h3 className="ATS_score"  style={{marginRight: '0.5rem'}}>
                 {ATSdetails.Prob_to_switch} 
-            </h2>
+            </h3>
         </div>
     </div>
 }

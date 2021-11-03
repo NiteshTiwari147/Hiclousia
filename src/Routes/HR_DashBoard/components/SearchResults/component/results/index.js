@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+
 import Introduction from './components/Introduction'; 
 import StatBox from './components/stats';
+import Action from './components/Action';
 
 import './styles.css';
 
@@ -29,14 +33,7 @@ class Results extends React.Component {
                     <div className="stateBoxContainer">
                         { candidate.ATS.map( (obj,index) => <StatBox label={statObjLabels[index].label} score={obj} /> )}
                     </div>
-                    <div className="actionbox">
-                        <button className="viewPortfolio">
-                            View Porfolio
-                        </button>
-                        <button className="sendInvite">
-                            Send Invite
-                        </button>
-                    </div>
+                    <Action />
                 </div>
                 })}
         </div>

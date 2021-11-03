@@ -1,0 +1,4 @@
+.dashboardStack {
+    display: flex;
+    flex-direction: column;
+}

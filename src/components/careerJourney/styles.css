@@ -1,11 +1,19 @@
-.topSkillBarGraphBox {
+.careerJourney{
     font-family: sans-serif;
     text-align: center;
     width: inherit;
-    height: 27rem;
+    height: fit-content;
     justify-content: center;
     margin: 2rem;
     border: 2px solid #0370ff;
     background: white;
     border-radius: 15px;
+}
+
+.careerTitle {
+    color: #0370ff;
+}
+
+.careerPosition {
+    color: #0370ff;
 }

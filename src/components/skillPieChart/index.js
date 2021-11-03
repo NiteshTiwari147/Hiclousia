@@ -15,7 +15,7 @@ const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
 export default function SkillPieChart() {
   return <div className="skillsPieChart">
-        <h2 style={{marginBottom: '0rem'}}>Skill Percentage</h2>
+        <h4 style={{marginBottom: '0rem'}}>Skill Percentage</h4>
         <PieChart width={800} height={400}>
         <Pie
             data={data}

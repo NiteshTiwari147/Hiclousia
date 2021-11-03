@@ -4,23 +4,25 @@ import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recha
 import './styles.css';
 
 const data = [
-      {name: 'react', projects: '4'},
+      {name: 'React', projects: '12'},
+      {name: 'HTML5', projects: '13'},
       {name: 'python',projects: '6'},
       {name: 'Cpp', projects: '4'},
-      {name: 'JS', projects: '3'},
+      {name: 'JavaScript', projects: '13'},
       {name: 'Java', projects: '2'},
 ];
 
-function TopSkillBarGraph () {
+function TopSkillBarGraph (props) {
+    const wdth = props.wdth || 210;
     return <div className="topSkillBarGraphBox">
-        <h2 style={{alignSelf: 'baseline', width: 'inherit', color: 'gray'}}>Top Skills Bar</h2>
-            <BarChart width={ 210 } height={ 300 } data={ data } maxBarSize={ 20 } layout={ 'vertical' }>
+        <h4 style={{alignSelf: 'baseline', width: 'inherit', color: 'gray'}}>Top Skills Bar</h4>
+            <BarChart width={ wdth } height={ 300 } data={ data } maxBarSize={ 20 } layout={ 'vertical' }>
                 <CartesianGrid strokeDasharray="2" />
                 <XAxis type={ 'number' } orientation={ 'bottom' } />
                 <YAxis  type={ 'category' } orientation={ 'left' } dataKey={ 'name' } />
-                <Bar dataKey={ 'projects' } fill={ '#0370ff' } barSize={'1'} />
+                <Bar dataKey={ 'projects' } fill={ '#0370ff' } barSize={'0'} />
             </BarChart>
-        <h3 style={{alignSelf: 'baseline', width: 'inherit', color: 'gray'}}>2021-22</h3>
+        <h5 style={{alignSelf: 'baseline', width: 'inherit', color: 'gray'}}>2021-22</h5>
     </div>  
     
 }

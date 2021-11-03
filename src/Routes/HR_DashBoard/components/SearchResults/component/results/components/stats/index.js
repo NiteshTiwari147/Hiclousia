@@ -9,7 +9,7 @@ class StatBox extends React.Component {
                 {this.props.label}
             </div>
             <div className="statBoxScore">                            
-               <h2 style={{marginTop: '0.5rem'}}>{this.props.score}%</h2>
+               <h4 style={{marginTop: '0.5rem'}}>{this.props.score}%</h4>
             </div>
         </div>
     }

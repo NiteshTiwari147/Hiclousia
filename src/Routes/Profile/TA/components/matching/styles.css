@@ -1,0 +1,84 @@
+.matchingBox{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 15rem;
+    height: fit-content;
+    margin: 2rem;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #0370ff;
+    border-radius: 15px;
+    background: white;
+}
+
+.matchingHeader {
+    display: flex;
+    width: 12rem;
+    height: 2rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background: #aeffc4;
+    color: #2e7d32
+}
+
+.unMatchedHeader {
+    display: flex;
+    width: 12rem;
+    height: 2rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    background: #ffe7ae;
+    color: #f6ae04
+}
+
+.matchingSkill {
+    display: flex;
+    width: 12rem;
+    height: 4rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    background: #e2efff;
+}
+
+.unMatchedSkill {
+    display: flex;
+    width: 12rem;
+    height: 2rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: space-around;
+    background: #ffe7ae;
+}
+
+.progressSkill {
+    background-color: #aecdf3;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    display: flex;
+    width: 7rem;
+    height: 5px;
+    transform: translateX(5px);
+}
+
+.progressSkill-value {
+    animation: load 3s normal forwards;
+    box-shadow: 0 10px 40px -10px #fff;
+    border-radius: 100px;
+    background: #0370ff;
+    height: 5px;
+    width: 0px;
+}
+
+.skillDetail {
+    display: flex;
+    flex-direction: column;
+}

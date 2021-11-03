@@ -45,7 +45,7 @@ const data = [
 function RankingGraph () {
 
     return <div class="rankGraphbox">
-      <h2 style={{marginLeft: '2rem', alignSelf: 'baseline', color: '#0370ff'}}>Ranking</h2>
+      <h4 style={{marginLeft: '2rem', alignSelf: 'baseline', color: '#0370ff'}}>Ranking</h4>
       <ResponsiveContainer width="100%" height="66%">
         <AreaChart width={730} height={250} data={data}
             margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>

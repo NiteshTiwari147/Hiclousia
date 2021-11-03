@@ -12,7 +12,7 @@ function SearchResults() {
     const candidateList = useSelector(state => state.list);
     return <div className="searchResultContent">
         <div className="headingTile">
-            <h1>Search Results</h1>
+            <h2>Search Results</h2>
             <BasicMenu />
         </div>
         <div>

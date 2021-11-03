@@ -15,6 +15,7 @@ import allReducer from './Data/reducers';
 import WelcomePage from './Routes/Welcome';
 import SearchPage from './Routes/HR_DashBoard';
 import Dashboard from './Routes/Profile/Dashboard';
+import Profile from './Routes/Profile/TA';
 import MarketAnalysis from './Routes/Profile/MarketAnalysis';
 
 const myStore = createStore(
@@ -26,11 +27,14 @@ ReactDOM.render(
   <Provider store={myStore}>
     <Router>
     <Switch>
-      <Route path="/welcome">
+      <Route path="/">
         <WelcomePage />
       </Route>
       <Route path="/search">
         <SearchPage />
+      </Route>
+      <Route path="/HR/profile">
+        <Profile />
       </Route>
       <Route path="/profile/dashboard">
         <Dashboard />

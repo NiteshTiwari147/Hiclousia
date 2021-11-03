@@ -10,7 +10,7 @@ function Projects(props) {
     const { title, duration, companyName, playTime, imageURL} = props;
     return <div className="projectBox"> 
         <img className="projectImage" src={imageURL}/>
-        <h2 style={{marginLeft: '1.5rem', alignSelf: 'baseline', width: 'inherit', color: 'gray'}}>{title}</h2>
+        <h4 style={{marginLeft: '1.5rem', alignSelf: 'baseline', width: 'inherit', color: 'gray'}}>{title}</h4>
         <div className="projectStats">
             <div className="duration">
                 <AccessTimeFilledIcon fontSize="large" color="primary" />
@@ -19,7 +19,7 @@ function Projects(props) {
                         Duration
                     </div>
                     <div className="durationStat">
-                        <h3 style={{color: '#0370ff', margin: '0.1rem'}}>{duration}</h3>
+                        <h5 style={{color: '#0370ff', margin: '0.1rem'}}>{duration}</h5>
                     </div>
                 </div>
             </div>
@@ -31,7 +31,7 @@ function Projects(props) {
                         Company
                     </div>
                     <div className="durationStat">
-                        <h3 style={{color: '#0370ff', margin: '0.1rem'}}>{companyName}</h3>
+                        <h5 style={{color: '#0370ff', margin: '0.1rem'}}>{companyName}</h5>
                     </div>
                 </div>
             </div>
@@ -43,7 +43,7 @@ function Projects(props) {
                         Play
                     </div>
                     <div className="durationStat">
-                        <h3 style={{color: '#0370ff', margin: '0.1rem'}}>{playTime}</h3>
+                        <h5 style={{color: '#0370ff', margin: '0.1rem'}}>{playTime}</h5>
                     </div>
                 </div>
             </div>

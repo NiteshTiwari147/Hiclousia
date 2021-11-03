@@ -15,7 +15,7 @@ class MarketAnalysis extends React.Component {
     render() {
         return <div className="container">
             <NavigationBar />
-            <h2 className="jobAnalysisHeading">JOB ANALYSIS</h2>
+            <h4 className="jobAnalysisHeading">JOB ANALYSIS</h4>
             <div className="analysisRow"> 
                 <div className="columnOne">
                     <SelectLabels />  
@@ -25,7 +25,7 @@ class MarketAnalysis extends React.Component {
                 <JobsTable />
             </div>
             <div className = "resultHeader">
-                <h2 className="recomendationsHeading">RECOMENDATIONS</h2>
+                <h4 className="recomendationsHeading">RECOMENDATIONS</h4>
                 <div>
                     <ResultHeader/>
                 </div>
