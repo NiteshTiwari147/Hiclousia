@@ -26,7 +26,7 @@ class Introduction extends React.Component {
             <div className="current">
                 {this.props.current.position} at {this.props.current.company}
             </div>
-            <div className="duration">
+            <div className="jobDuration">
             {this.props.current.duration.from}-till now
             </div>
             <div className="category">

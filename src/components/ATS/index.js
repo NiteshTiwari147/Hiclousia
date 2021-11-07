@@ -5,13 +5,8 @@ import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import ChangeCircleIcon from '@mui/icons-material/ChangeCircle';
 
 import './styles.css';
-function ATS () {
-    const ATSdetails = {
-        "communication": "88%",
-        "skills": "17",
-        "Projects": "13",
-        "Prob_to_switch": "12%"
-    }
+function ATS (props) {
+   const { communication, prob_to_switch, projects, skills} = props;
     return <div className="ATS">
         <div className="miniBox">
             <div className="headingATS">
@@ -19,7 +14,7 @@ function ATS () {
                 <h4>Communication</h4> 
             </div>
             <h3 className="ATS_score" style={{marginRight: '0.5rem'}}>
-                {ATSdetails.communication}
+                {communication}
             </h3>
         </div>
         <div className="miniBox">
@@ -28,7 +23,7 @@ function ATS () {
                 <h4>Total Projects</h4> 
             </div>
             <h3 className="ATS_score" style={{marginRight: '1rem'}}>
-                {ATSdetails.Projects}
+                {projects}
             </h3>
         </div>
         <div className="miniBox">
@@ -37,7 +32,7 @@ function ATS () {
                 <h4>Skills</h4> 
             </div>
             <h3 className="ATS_score" style={{marginRight: '1rem'}}>
-                 {ATSdetails.skills}
+                 {skills}
             </h3>
         </div>
         <div className="miniBox">
@@ -46,7 +41,7 @@ function ATS () {
                 <h4>Probability to Switch</h4> 
             </div>
             <h3 className="ATS_score"  style={{marginRight: '0.5rem'}}>
-                {ATSdetails.Prob_to_switch} 
+                {prob_to_switch} 
             </h3>
         </div>
     </div>

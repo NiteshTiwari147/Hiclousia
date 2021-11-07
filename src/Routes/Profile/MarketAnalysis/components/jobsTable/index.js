@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React from 'react';
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
 import TableBody from '@mui/material/TableBody';
@@ -8,7 +8,6 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-import { getTableData } from '../../service/tableHandler';
 import './styles.css';
 
 const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -40,7 +39,15 @@ const progressBar = () => {
 }
 
 export default function JobsTable() {
-  const rows = getTableData();
+  const [rows,setRows] = React.useState(null);
+
+  React.useEffect(() => {
+    fetch("/table")
+    .then((res) => res.json())
+    .then((data) => {
+        setRows(data.resp);
+    }, []);
+  });
   return (
     <TableContainer component={Paper}>
       <Table sx={{ minWidth: 500 }} aria-label="customized table">
@@ -52,8 +59,8 @@ export default function JobsTable() {
             <StyledTableCell align="right">No&nbsp;of&nbsp;Companies</StyledTableCell>
           </TableRow>
         </TableHead>
-        <TableBody>
-          {rows.map((row) => (
+          <TableBody>
+          {rows && rows.map((row) => (
             <StyledTableRow key={row.position}>
               <StyledTableCell component="th" scope="row">
                 {row.position}

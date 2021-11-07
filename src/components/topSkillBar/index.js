@@ -3,17 +3,9 @@ import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend} from 'recha
 
 import './styles.css';
 
-const data = [
-      {name: 'React', projects: '12'},
-      {name: 'HTML5', projects: '13'},
-      {name: 'python',projects: '6'},
-      {name: 'Cpp', projects: '4'},
-      {name: 'JavaScript', projects: '13'},
-      {name: 'Java', projects: '2'},
-];
-
 function TopSkillBarGraph (props) {
     const wdth = props.wdth || 210;
+    const data = props.data;
     return <div className="topSkillBarGraphBox">
         <h4 style={{alignSelf: 'baseline', width: 'inherit', color: 'gray'}}>Top Skills Bar</h4>
             <BarChart width={ wdth } height={ 300 } data={ data } maxBarSize={ 20 } layout={ 'vertical' }>

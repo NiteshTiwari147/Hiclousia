@@ -27,7 +27,7 @@ ReactDOM.render(
   <Provider store={myStore}>
     <Router>
     <Switch>
-      <Route path="/">
+      <Route path="/welcome">
         <WelcomePage />
       </Route>
       <Route path="/search">

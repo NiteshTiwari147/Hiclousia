@@ -2,7 +2,7 @@
     font-family: sans-serif;
     text-align: center;
     width: 15rem;
-    height: 30rem;
+    height: fit-content;
     justify-content: center;
     margin: 2rem;
     border: 2px solid #0370ff;

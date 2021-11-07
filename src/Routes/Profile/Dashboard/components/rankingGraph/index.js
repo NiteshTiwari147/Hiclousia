@@ -3,47 +3,8 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 
 import './styles.css';
 
-const data = [
-  {
-    name: '8:00',
-    A: 74,
-    B: 64,
-    C:100
-  },
-  {
-    name: '10:00',
-    A: 78,
-    B: 61,
-    C:100
-  },
-  {
-    name: '12:00',
-    A: 81,
-    B: 64,
-    C:100
-  },
-  {
-    name: '2:00',
-    A: 75,
-    B: 65,
-    C:100
-  },
-  {
-    name: '4:00',
-    A: 73,
-    B: 62,
-    C:100
-  },
-  {
-    name: '6:00',
-    A: 80,
-    B: 68,
-    C:100
-  },
-];
-
-function RankingGraph () {
-
+function RankingGraph (props) {
+    const { data } = props;
     return <div class="rankGraphbox">
       <h4 style={{marginLeft: '2rem', alignSelf: 'baseline', color: '#0370ff'}}>Ranking</h4>
       <ResponsiveContainer width="100%" height="66%">

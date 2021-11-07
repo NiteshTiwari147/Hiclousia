@@ -2,25 +2,26 @@ import "./styles.css";
 import React from "react";
 import { PieChart, Pie, Legend, Cell } from "recharts";
 
-const data = [
-  { name: "React", value: 32 },
-  { name: "JS", value: 20 },
-  { name: "TypeScript", value: 20 },
-  { name: "C++", value: 12 },
-  { name: "C", value: 6 },
-  { name: "Python", value: 5 },
-  { name: "CSS", value: 5 },
-];
+// const data = [
+//   { name: "React", value: 32 },
+//   { name: "JS", value: 20 },
+//   { name: "TypeScript", value: 20 },
+//   { name: "C++", value: 12 },
+//   { name: "C", value: 6 },
+//   { name: "Python", value: 5 },
+//   { name: "CSS", value: 5 },
+// ];
 const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
 
-export default function SkillPieChart() {
+export default function SkillPieChart(props) {
+  const { data } = props
   return <div className="skillsPieChart">
         <h4 style={{marginBottom: '0rem'}}>Skill Percentage</h4>
-        <PieChart width={800} height={400}>
+        <PieChart width={240} height={320}>
         <Pie
             data={data}
-            cx={120}
-            cy={200}
+            cx={110}
+            cy={150}
             innerRadius={60}
             outerRadius={90}
             fill="#8884d8"
